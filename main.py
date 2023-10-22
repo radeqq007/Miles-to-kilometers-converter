@@ -1,11 +1,11 @@
 import tkinter as tk
-from tkinter import ttk
+import ttkbootstrap as ttk
 
 def convert():
     output_string.set(entry_int.get()*1.61)
 
 #window
-window = tk.Tk()
+window = ttk.Window(themename = "darkly")
 window.title("Miles to kilometers converter")
 window.geometry("300x150")
 
